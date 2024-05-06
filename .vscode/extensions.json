@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"redhat.vscode-yaml",
+		"foxundermoon.shell-format",
+		"IronGeek.vscode-env",
+		"biomejs.biome",
+		"streetsidesoftware.code-spell-checker"
+	]
+}

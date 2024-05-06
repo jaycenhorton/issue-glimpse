@@ -1,0 +1,45 @@
+{
+	"name": "issue-glimpse",
+	"displayName": "Issue-Glimpse",
+	"description": "Keeps your code comments synchronized with GitHub issue statuses. This VS Code extension enhances your coding workflow by displaying the current status of GitHub issues directly within your code comments. With Issue-Glimpse, you no longer need to toggle back and forth between your editor and GitHub to check if a mentioned issue is code comments is still open or has been closed.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.89.0"
+	},
+	"categories": ["Other"],
+	"activationEvents": ["onStartupFinished", "onLanguage:*"],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "Issue Glimpse",
+			"properties": {
+				"issue-glimpse.githubToken": {
+					"type": "string",
+					"default": "",
+					"description": "GitHub token for accessing GitHub issues API."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "issue-glimpse.refresh",
+				"title": "Refresh GitHub Issue Decorations in Comments"
+			}
+		]
+	},
+	"scripts": {
+		"build": "vite build",
+		"watch": "vite build --watch",
+		"package": "vite build --mode production"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.7.2",
+		"@total-typescript/ts-reset": "^0.5.1",
+		"@tsconfig/node20": "^20.1.4",
+		"@tsconfig/strictest": "^2.0.5",
+		"@types/node": "20.x",
+		"@types/vscode": "^1.89.0",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11"
+	}
+}
