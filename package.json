@@ -41,7 +41,7 @@
 		"@types/node": "~20.12.8",
 		"@types/vscode": "^1.89.0",
 		"@vscode/vsce": "^2.26.1",
-		"typescript": "^5.4.5",
+		"typescript": "^5.5.2",
 		"vite": "^5.2.11"
 	}
 }
